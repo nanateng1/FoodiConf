@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "install": "^0.13.0",
+    "tailwindcss": "^3.1.8"
+  },
+  "name": "what-meal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./src/input.css -o ./output/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

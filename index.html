@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodiConf</title>
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="output/tailwind.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&family=Yeseva+One&display=swap" rel="stylesheet" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  </head>
+  <body>
+    <div class="w-full h-screen bg-hero bg-cover bg-center relative">
+      <div class="hidden">
+        <nav class="py-5 bg-oxford-blue bg-opacity-20">
+          <div class="container mx-auto flex justify-between">
+            <div>
+              <h1 class="text-turquoise-blue font-body font-bold text-3xl">Foodi<span class="text-ruby">Conf</span></h1>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-magnifying-glass text-turquoise-blue"></i>
+              <form action="" class="">
+                <input class="border-turquoise-blue border rounded-xl w-48 px-2 py-1 outline-none" type="text" placeholder="Search" />
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <!-- hero section -->
+        <div class="container mx-auto py-5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <div class="flex flex-col md:flex-row items-center justify-around">
+            <!-- hero left section -->
+            <div class="flex flex-col gap-2 text-oxford-blue font-body w-full md:w-4/6 items-center md:items-stretch">
+              <h1 class="font-primary font-bold text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-normal text-center md:text-left">
+                Start Cooking <br />
+                with what's in <br />
+                your Refrigerator
+              </h1>
+              <p class="font-body text-xl md:text-2xl">
+                Got some ingredients and don't know what to prepare? <br />
+                We've got you covered.
+              </p>
+              <form action="" class="border-turquoise-blue border rounded-xl p-1 flex flex-row bg-white items-center justify-between w-full">
+                <input class="w-3/4 outline-none" type="text" placeholder="Type Ingredient Here" />
+                <button class="bg-turquoise-blue text-lg w-fit px-2 py-1 rounded-md font-semibold">Search</button>
+              </form>
+            </div>
+            <!-- hero right section -->
+            <div class="w-1/2 md:w-5/12 -z-10 flex flex-col md:flex-row">
+              <img class="-rotate-90 md:-rotate-45 w-fit hidden md:block drop-shadow-2xl" src="/output/img/fathul-abrar-ZqREbckCRQA-unsplash1.png" alt="" />
+              <div class="flex flex-row md:flex-col justify-around w-full items-center md:hidden lg:flex pt-5 z-10">
+                <img src="/output/img/potatoes.png" alt="" />
+                <img src="/output/img/baiq-daling-ykThMylLsbY-unsplash.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- search results -->
+    <div class="bg-gray-300">
+      <div class="absolute container top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div class="container mx-auto text-oxford-blue py-5">
+          <div class="flex flex-col">
+            <div class="text-center py-5">
+              <h1 class="font-primary text-5xl py-3">Your Results are Ready</h1>
+              <p class="font-body text-xl">You can prepare these yummy meals with <span>potatoes</span></p>
+            </div>
+            <div class="flex gap-3 justify-center items-center">
+              <!-- result cards -->
+              <div class="flex flex-col">
+                <div class="flex flex-col bg-cyan-300 bg-opacity-80 rounded-xl">
+                  <div class="py-3">
+                    <img class="object-cover w-5/6 mx-auto rounded-xl" src="/output/img/baiq-daling-ykThMylLsbY-unsplash.jpg" alt="" />
+                    <div class="text-center font-body text-xl">
+                      <span class="font-semibold">Rice </span>
+                      <a href="" class="block text-cyan-600 italic underline leading-relaxed">Get Recipes</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- result cards -->
+              <div class="flex flex-col">
+                <div class="flex flex-col bg-cyan-300 bg-opacity-80 rounded-xl">
+                  <div class="py-3">
+                    <img class="object-cover w-5/6 mx-auto rounded-xl" src="/output/img/baiq-daling-ykThMylLsbY-unsplash.jpg" alt="" />
+                    <div class="text-center font-body text-xl">
+                      <span class="font-semibold">Rice </span>
+                      <a href="" class="block text-cyan-600 italic underline leading-relaxed">Get Recipes</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- result cards -->
+              <div class="flex flex-col">
+                <div class="flex flex-col bg-cyan-300 bg-opacity-80 rounded-xl">
+                  <div class="py-3">
+                    <img class="object-cover w-5/6 mx-auto rounded-xl" src="/output/img/baiq-daling-ykThMylLsbY-unsplash.jpg" alt="" />
+                    <div class="text-center font-body text-xl">
+                      <span class="font-semibold">Rice </span>
+                      <a href="" class="block text-cyan-600 italic underline leading-relaxed">Get Recipes</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
