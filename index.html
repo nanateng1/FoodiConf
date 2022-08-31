@@ -25,18 +25,18 @@
             <div>
               <h1 class="text-turquoise-blue font-body font-bold text-3xl">  Foodi<span class="text-ruby">Conf</span></h1>
             </div>
-            <div class="flex items-center gap-3">
+            <!-- <div class="flex items-center gap-3">
               <i class="fa-solid fa-magnifying-glass text-turquoise-blue magnifying-glass"></i>
-              <form action="" class="">
-                <input class="search-input hidden border-turquoise-blue border rounded-xl w-48 px-2 py-1 outline-none" type="text" placeholder="Search" />
-              
+              <form action="" class="hidden search-input">
+                <input class=" border-turquoise-blue border rounded-xl w-48 px-2 py-1 outline-none " type="text" placeholder="Search" />
+                <button type=""><i class="fa-solid fa-magnifying-glass text-turquoise-blue "></i></button>
               </form>
-            </div>
+            </div> -->
           </div>
         </nav>
 
         <!-- hero section -->
-        <div class="container mx-auto py-5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hero hidden">
+        <div class="container mx-auto py-5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hero">
           <div class="flex flex-col md:flex-row items-center justify-around">
             <!-- hero left section -->
             <div class="flex flex-col gap-2 text-oxford-blue font-body w-full md:w-4/6 items-center md:items-stretch">
@@ -50,8 +50,8 @@
                 We've got you covered.
               </p>
               <form action="" class="border-turquoise-blue border rounded-xl p-1 flex flex-row bg-white items-center justify-between w-full">
-                <input class="w-3/4 outline-none" type="text" placeholder="Type Ingredient Here" />
-                <button class="bg-turquoise-blue text-lg w-fit px-2 py-1 rounded-md font-semibold"><a href="#results">Search</a></button>
+                <input id="search-input" class="w-3/4 outline-none " type="text" placeholder="Type Ingredient Here" required />
+                <button class="bg-turquoise-blue text-lg w-fit px-2 py-1 rounded-md font-semibold"><a href="#result">Search</a></button>
               </form>
             </div>
             <!-- hero right section -->
@@ -68,7 +68,7 @@
     </div>
 
     <!-- search results -->
-    <div id="results" class="bg-gray-300 min-h-screen">
+    <div id="result" class="bg-gray-300 hidden">
       <!-- <div class="absolute container top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"> -->
         <div class="container mx-auto text-oxford-blue py-5">
           <div class="flex flex-col">
@@ -76,41 +76,11 @@
               <h1 class="font-primary text-5xl py-3">Your Results are Ready</h1>
               <p class="font-body text-xl">You can prepare these yummy meals with <span>potatoes</span></p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 justify-items-center h-full">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3  justify-center">
               <!-- result cards -->
-              <div class="flex flex-col rounded-xl">
+              <div id="meal-card" class="flex flex-col rounded-xl w-72 py-3">
                 <div class="w-72 h-72">
-                  <img class="rounded-lg object-cover w-full h-full drop-shadow-md" src="/output/img/fathul-abrar-ZqREbckCRQA-unsplash.jpg" alt="" />
-                </div>
-                <div class="text-center font-body text-xl bg-black bg-opacity-30 rounded-b-md flex flex-col">
-                  <span class="font-semibold">Rice </span>
-                  <span><a href="" class="text-cyan-300 italic underline leading-relaxed">Get Recipes</a></span>
-                </div>
-              </div>
-              <!-- result cards -->
-              <div class="flex flex-col rounded-xl">
-                <div class="w-72 h-72">
-                  <img class="rounded-lg object-cover w-full h-full drop-shadow-md" src="/output/img/fathul-abrar-ZqREbckCRQA-unsplash.jpg" alt="" />
-                </div>
-                <div class="text-center font-body text-xl bg-black bg-opacity-30 rounded-b-md flex flex-col">
-                  <span class="font-semibold">Rice </span>
-                  <span><a href="" class="text-cyan-300 italic underline leading-relaxed">Get Recipes</a></span>
-                </div>
-              </div>
-              <!-- result cards -->
-              <div class="flex flex-col rounded-xl">
-                <div class="w-72 h-72">
-                  <img class="rounded-lg object-cover w-full h-full drop-shadow-md" src="/output/img/fathul-abrar-ZqREbckCRQA-unsplash.jpg" alt="" />
-                </div>
-                <div class="text-center font-body text-xl bg-black bg-opacity-30 rounded-b-md flex flex-col">
-                  <span class="font-semibold">Rice </span>
-                  <span><a href="" class="text-cyan-300 italic underline leading-relaxed">Get Recipes</a></span>
-                </div>
-              </div>
-              <!-- result cards -->
-              <div class="flex flex-col rounded-xl">
-                <div class="w-72 h-72">
-                  <img class="rounded-lg object-cover w-full h-full drop-shadow-md" src="/output/img/fathul-abrar-ZqREbckCRQA-unsplash.jpg" alt="" />
+                  <img class="rounded-lg object-cover w-full h-full drop-shadow-md" src="https://www.themealdb.com/images/media/meals/sypxpx1515365095.jpg" alt="" />
                 </div>
                 <div class="text-center font-body text-xl bg-black bg-opacity-30 rounded-b-md flex flex-col">
                   <span class="font-semibold">Rice </span>
