@@ -76,7 +76,7 @@
               <h1 class="font-primary text-5xl py-3">Your Results are Ready</h1>
               <p class="font-body text-xl">You can prepare these yummy meals with <span>potatoes</span></p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3  justify-center">
+            <div class="flex gap-3  justify-center">
               <!-- result cards -->
               <div id="meal-card" class="flex flex-col rounded-xl w-72 py-3">
                 <div class="w-72 h-72">
@@ -84,7 +84,7 @@
                 </div>
                 <div class="text-center font-body text-xl bg-black bg-opacity-30 rounded-b-md flex flex-col">
                   <span class="font-semibold">Rice </span>
-                  <span><a href="" class="text-cyan-300 italic underline leading-relaxed">Get Recipes</a></span>
+                  <span id="get-recipe"><a href="" class="text-cyan-300 italic underline leading-relaxed">Get Recipes</a></span>
                 </div>
               </div>
             </div>
@@ -94,7 +94,7 @@
     </div>
 
     <!-- Recipe details -->
-    <article id="meal_details" class="absolute container top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-screen flex items-center hidden">
+    <article id="meal-details" class="absolute container top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-screen flex items-center invisible">
       <div class="bg-cyan-400 bg-opacity-70 w-4/5 h-3/4 md:h-2/3 rounded-md mx-auto">
         <div class="flex justify-end py-5 px-3 text-xl  ">
           <i class="fa-solid fa-xmark right-1 top-0 p-2 cursor-pointer"></i>
