@@ -25,7 +25,12 @@ function getMeals() {
       if (data.meals) {
         data.meals.forEach(meal => {
           resultList += ` 
+<<<<<<< HEAD
             <div class="flex flex-col rounded-xl w-72  py-3 meal-card" data-id="${meal.idMeal}" >
+=======
+          <div class="flex flex-wrap w-full flex-row">
+            <div class="flex flex-col rounded-xl py-3 meal-card" data-id="${meal.idMeal}" >
+>>>>>>> dbf778ba32179eb7ce1496be546cc235aecd31af
                 <div class="w-72 h-72">
                     <img class="rounded-lg object-cover w-full h-full drop-shadow-md" src="${meal.strMealThumb}" alt="${meal.strMeal}" />
                 </div>
