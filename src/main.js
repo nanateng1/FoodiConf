@@ -60,3 +60,12 @@ function detailsModal(meal){
   console.log(meal);
   meal = meal[0]
 }
+
+//close modal
+let closeBtn = document.querySelector('.closeModal')
+let modal = document.querySelector('.modal')
+
+closeBtn.addEventListener('click', ()=>{
+  modal.classList.add('invisible')
+})
+
