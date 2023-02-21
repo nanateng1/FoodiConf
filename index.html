@@ -25,18 +25,11 @@
             <div>
               <h1 class="text-turquoise-blue font-body font-bold text-3xl">  Foodi<span class="text-ruby">Conf</span></h1>
             </div>
-            <!-- <div class="flex items-center gap-3">
-              <i class="fa-solid fa-magnifying-glass text-turquoise-blue magnifying-glass"></i>
-              <form action="" class="hidden search-input">
-                <input class=" border-turquoise-blue border rounded-xl w-48 px-2 py-1 outline-none " type="text" placeholder="Search" />
-                <button type=""><i class="fa-solid fa-magnifying-glass text-turquoise-blue "></i></button>
-              </form>
-            </div> -->
           </div>
         </nav>
 
         <!-- hero section -->
-        <div class="container mx-auto py-5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hero">
+        <div class="container mx-auto py-5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div class="flex flex-col md:flex-row items-center justify-around">
             <!-- hero left section -->
             <div class="flex flex-col gap-2 text-oxford-blue font-body w-full md:w-4/6 items-center md:items-stretch">
@@ -93,49 +86,46 @@
       </div>
     </div>
 
+    <!-- modal -->
     <!-- Recipe details -->
-    <article id="meal-details" class="absolute container top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-screen flex items-center invisible">
-      <div class="bg-cyan-400 bg-opacity-70 w-4/5 h-3/4 md:h-2/3 rounded-md mx-auto">
-        <div class="flex justify-end py-5 px-3 text-xl  ">
-          <i class="fa-solid fa-xmark right-1 top-0 p-2 cursor-pointer"></i>
+    <article id="meal-details" class="absolute container top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-screen flex items-center">
+      <div class="bg-cyan-400 bg-opacity-70 w-4/5 h-3/4 md:h-2/3 rounded-md mx-auto relative">
+        <div class="justify-end py-5 px-3 text-xl relative right-4 top-6 ">
+          <i class="fa-solid fa-xmark right-1 top-0 p-2 absolute cursor-pointer"></i>
         </div>
         <!-- meal details -->
-        <div class="flex flex-col justify-center items-center w-full">
+        <div class="flex flex-row justify-center items-center w-full">
           <!-- meal name img -->
-          <div class="flex justify-between gap-5 items-center w-full px-5">
+          <div class="flex justify-between gap-5 items-center w-full px-5 flex-col">
             <div class="w-1/2">
-              <div class="w-36 md:w-48 lg:w-72">
-              <img class="w-full h-full rounded-lg drop-shadow-md" src="/output/img/baiq-daling-ykThMylLsbY-unsplash.jpg" alt="">
-            </div>
-            </div>
-            
-            <div class="flex flex-col font-body text-lg font-medium w-1/2">
+              <div class="w-12 md:w-20 lg:w-12">
+                <img class="w-1/2 rounded-lg drop-shadow-md object-cover" src="/output/img/baiq-daling-ykThMylLsbY-unsplash.jpg" alt="">
+              </div>
+              <div class="flex flex-col font-body text-lg font-medium w-1/2">
               <h1 class=" font-bold text-xl">Meal Name Here</h1>
               <span>Category</span>
               <span>Area</span>
             </div>
-          </div>
-          <!-- ingredients & instructions -->
-          <div class="flex flex-col md:flex-row  justify-center py-3 px-2">
-            <div class="flex flex-col justify-center 
-            md:w-1/2 first-line:py-3">
+            
+            <div class="flex flex-col md:flex-row  justify-center py-3 px-2">
+            <div class="flex flex-col justify-center md:w-1/2 first-line:py-3">
               <!-- ingredients  -->
               <span class="font-body text-lg font-bold underline text-center">Ingredients</span>
-              <ul class="list-disc h-fit flex gap-10 justify-center ">
-                <div>
-                  <li>Ingredient one</li>
-                  <li>Ingredient two</li>
-                  <li>Ingredient three</li>
-                  <li>Ingredient four</li>
-                </div>
-                <div>
-                  <li>Ingredient five</li>
-                  <li>Ingredient six</li>
-                  <li>Ingredient seven</li>
-                  <li>Ingredient eight</li>
-                </div>  
+              <ul class="list-disc h-fit grid ">
+                  <li class="ingredient">Ingredient one</li>
+                  <li class="ingredient">Ingredient two</li>
+                  <li class="ingredient">Ingredient three</li>
+                  <li class="ingredient">Ingredient four</li>
+                  <li class="ingredient">Ingredient five</li>
+                  <li class="ingredient">Ingredient six</li>
+                  <li class="ingredient">Ingredient seven</li>
+                  <li class="ingredient">Ingredient eight</li>
               </ul>
             </div>
+            
+          </div>
+          <!-- ingredients & instructions -->
+          
             <!-- instructions  -->
             <div class="flex flex-col justify-center md:w-1/2 py-3">
               <span class="font-body text-lg font-bold underline text-center">Instructions</span>
